@@ -1,0 +1,33 @@
+.gallery {
+  padding-top: 50px;
+  padding-bottom: 50px;
+
+  @media screen and (max-width: 768px) {
+    padding-bottom: 25px;
+    padding-top: 25px;
+  }
+
+  &__content {
+    padding-bottom: 50px;
+  }
+
+  &__item {
+    width: 100%;
+    border-radius: 30px;
+  }
+
+  &__btn-prev,
+  &__btn-next {
+    top: auto !important;
+    bottom: -2px !important;
+  }
+
+  &__btn-next {
+    right: calc(50% - 103px) !important;
+  }
+
+  &__btn-prev {
+    left: calc(50% - 103px) !important;
+  }
+
+}

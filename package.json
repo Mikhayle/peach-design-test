@@ -1,0 +1,26 @@
+{
+  "name": "portfolio",
+  "version": "1.0.0",
+  "description": "test task for peach company",
+  "privat": true,
+  "devDependencies": {
+    "copy-webpack-plugin": "^8.1.0",
+    "css-loader": "^5.2.0",
+    "file-loader": "^6.2.0",
+    "html-webpack-plugin": "^5.3.1",
+    "mini-css-extract-plugin": "^1.4.0",
+    "node-sass": "^5.0.0",
+    "sass-loader": "^11.0.1",
+    "swiper": "^6.5.3",
+    "webpack": "^5.28.0",
+    "webpack-cli": "^4.6.0",
+    "webpack-dev-server": "^3.10.3"
+  },
+  "scripts": {
+    "build": "webpack --mode production",
+    "start": "webpack --watch --mode development",
+    "dev": "webpack-dev-server --mode development"
+  },
+  "author": "Alexandr",
+  "license": "ISC"
+}

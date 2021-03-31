@@ -1,0 +1,85 @@
+.cards {
+  margin-top: -133px;
+  padding-bottom: 50px;
+
+  @media screen and (max-width: 1024px) {
+    margin-top: 0;
+  }
+
+  @media screen and (max-width: 768px) {
+    padding-bottom: 25px;
+  }
+
+  &__container {
+    padding-bottom: 50px;
+  }
+
+  &__pagination {
+    @media screen and (min-width: 1300px) {
+      display: none !important;
+    }
+  }
+}
+
+.card {
+  padding: 35px 50px;
+  min-height: 416px;
+  background: #fff;
+  border: 1px solid rgba(136, 140, 140, 0.4);
+  box-sizing: border-box;
+  border-radius: 30px;
+  transition: background 0.3s ease-in-out, color 0.3s ease-in-out;
+
+  &:hover {
+    color: #fff;
+    background: $secondary;
+    transition: background 0.3s ease-in-out, color 0.3s ease-in-out;
+  }
+
+  &:hover > .card__icon path {
+    fill: #fff;
+    transition: fill 0.3s ease-in-out;
+  }
+
+  &:hover .card__title {
+    color: #fff;
+    transition: color 0.3s ease-in-out;
+  }
+
+
+  @media screen and (max-width: 768px) {
+    min-height: 330px;
+  }
+
+  &__icon {
+    margin-bottom: 20px;
+    & path {
+      transition: fill 0.3s ease-in-out;
+    }
+  }
+
+  &__title {
+    margin-bottom: 10px;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 115%;
+    color: #000;
+    transition: color 0.3s ease-in-out;
+
+    @media screen and (max-width: 576px) {
+      font-size: 22px;
+      line-height: 30px;
+    }
+  }
+
+  &__text {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 140%;
+
+    @media screen and (max-width: 576px) {
+      font-size: 14px;
+      line-height: 20px;
+    }
+  }
+}
